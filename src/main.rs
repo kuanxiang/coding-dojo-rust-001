@@ -1,22 +1,21 @@
-fn main() {
-    println!("Hello, world!");
-}
+use std::*;
 
 #[derive(Debug)]
-struct Solution{}
+struct Solution {}
 
 impl Solution {
-    //TODO;
-    fn add(a: i64, b:i64) -> i64 {
-        0        
+    //TODO:
+    fn add(a: i64, b: i64) -> i64 {
+        0
     }
 }
 
 #[test]
 fn test1() {
-    let b = Solution::add(1,3)
-    assert!(Solution::add(a:1, b:3), 4)
-    
+    assert_eq!(Solution::add(1, 3), 4);
+    assert_eq!(Solution::add(7, 9), 6);
 }
 
-
+fn main() {
+    println!("Hello, world!");
+}
